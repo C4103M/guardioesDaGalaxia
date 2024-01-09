@@ -1,3 +1,8 @@
+@import url("background.css");
+@import url("header.css");
+@import url("main.css");
+@import url("font.css");
+@import url("navigation.css");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +12,7 @@
 
 :root {
   --text: #EDF1F7;
-
+  
   --image-shadow: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);
   --peter: linear-gradient(45deg, #e11010 25%, #ffa200 80%);
   --gamora: linear-gradient(45deg, #6FE863 30%, #FF008D 85%);
@@ -21,4 +26,16 @@ body {
   overflow: hidden;
   color: var(--text);
   font-family: 'Rubik', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 80px 80px;
+  z-index: 10;
 }
